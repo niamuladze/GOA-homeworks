@@ -4,7 +4,7 @@ for i in range(950, 1000, 2):
 
 #2nd work
 for name in range(100):
-    print("Dato")
+    print("Nia")
 
 #3rd work
 for goa in range(1000):
