@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება</title>
+  <style>
+    /* 1) ფოტოს div */
+    .photo-container {
+      background-color: rgb(255, 0, 0); /* წითელი background */
+      width: 1000px;
+    }
+
+    .photo-container img {
+      width: 50%; /* ანუ 500px რადგან მშობელი 1000px არის */
+    }
+
+    /* 2) ფოტო 25% width და 50% height */
+    .responsive-photo {
+      width: 25vw; /* 25% ეკრანის სიგანიდან */
+      height: 50vh; /* 50% ეკრანის სიმაღლიდან */
+    }
+
+    /* 3) პარაგრაფები */
+    .text-container {
+      font-size: 20px; /* ძირითადი ზომა */
+    }
+
+    .text-container p:nth-child(1) {
+      font-size: 10%; /* ანუ 2px */
+    }
+
+    .text-container p:nth-child(2) {
+      font-size: 50%; /* ანუ 10px */
+    }
+
+    .text-container p:nth-child(3) {
+      font-size: 200%; /* ანუ 40px */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) div ფოტოთი -->
+  <div class="photo-container">
+    <img src=./chris-ried-ieic5Tq8YMk-unsplash-scaled.jpg alt="ფოტო">
+  </div>
+
+  <!-- 2) ფოტო ეკრანის ზომაზე დამოკიდებული -->
+  <img class="responsive-photo" src=./chris-ried-ieic5Tq8YMk-unsplash-scaled.jpgalt ="ეკრანის ზომაზე დამოკიდებული ფოტო">
+
+  <!-- 3) პარაგრაფები -->
+  <div class="text-container">
+    <p>პირველი პარაგრაფი</p>
+    <p>მეორე პარაგრაფი</p>
+    <p>მესამე პარაგრაფი</p>
+  </div>
+
+</body>
+</html>

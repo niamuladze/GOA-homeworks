@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება</title>
+  <style>
+    /* 1) სამი ფერადი დივი */
+    .box-red {
+      background-color: rgb(255, 0, 0);
+      width: 300px;
+      height: 300px;
+    }
+
+    .box-green {
+      background-color: rgb(0, 255, 0);
+      width: 300px;
+      height: 300px;
+    }
+
+    .box-blue {
+      background-color: rgb(0, 0, 255);
+      width: 300px;
+      height: 300px;
+    }
+
+    /* 2) დიდი დივი და 4 პატარა ფოტო */
+    .container {
+      width: 1000px;
+      height: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      width: 25%;
+      height: 25%;
+    }
+
+    /* 4) ფერები rgb, hex და hsl */
+    .color-rgb {
+      background-color: rgb(255, 100, 100);
+      width: 300px;
+      height: 300px;
+    }
+
+    .color-hex {
+      background-color: #64c864;
+      width: 300px;
+      height: 300px;
+    }
+
+    .color-hsl {
+      background-color: hsl(240, 100%, 70%);
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) სამი დივი RGB -->
+  <div class="box-red"></div>
+  <div class="box-green"></div>
+  <div class="box-blue"></div>
+
+  <!-- 2) 1000x1000 დივი 4 ფოტოთი -->
+  <div class="container">
+    <img src=./Korembi-January-2024.jpg alt="ფოტო 1">
+    <img src=./Korembi-January-2024.jpg alt="ფოტო 2">
+    <img src=./Korembi-January-2024.jpg  alt="ფოტო 3">
+    <img src=./Korembi-January-2024.jpg alt="ფოტო 4">
+  </div>
+
+  <!-- 3) RGB vs HEX კომენტარი -->
+  <!-- 
+    RGB (Red, Green, Blue) — ფერების გამოსახატად გამოიყენება სამივე კომპონენტის რიცხვები 0-დან 255-მდე.
+    მაგ.: rgb(255, 0, 0) — წითელი ფერი.
+
+    HEX — იგივე ფერის გამოსახატად იყენებს 16-ბიტიან ჰექსადეციმალურ სისტემას.
+    მაგ.: #FF0000 — ასევე წითელი ფერი.
+
+    ორივე აღწერს ერთსა და იმავე ფერს, უბრალოდ სხვადასხვა ფორმატით.
+  -->
+
+  <!-- 4) rgb, hex, hsl ფერები -->
+  <div class="color-rgb"></div>
+  <div class="color-hex"></div>
+  <div class="color-hsl"></div>
+
+</body>
+</html>
