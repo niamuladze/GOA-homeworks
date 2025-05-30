@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>დავალება</title>
+  <style>
+    /* 1) დივი 800px ან 100% ეკრანის ზომაზე */
+    .responsive-div {
+      width: 800px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px auto;
+    }
+
+    @media (max-width: 800px) {
+      .responsive-div {
+        width: 100%;
+      }
+    }
+
+    /* 2) 2 ფოტო გვერდიგვერდ 300x300 ან 50% ეკრანის სიგანეზე */
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 500px) {
+      .image-container img {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    /* 3) Font-size, text-decoration, text-shadow, uppercase */
+    .styled-div {
+      font-size: 25px;
+      margin-top: 30px;
+    }
+
+    .styled-div p {
+      font-size: 50%; /* 12.5px */
+      text-decoration: line-through overline;
+      text-decoration-color: red;
+      text-decoration-style: wavy;
+      color: red;
+      text-transform: uppercase;
+      text-shadow: 5px 10px 5px orange;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) Responsive div -->
+  <div class="responsive-div">
+    ეს არის რეზპონსიული დივი
+  </div>
+
+  <!-- 2) ორი ფოტო -->
+  <div class="image-container">
+    <img src="1714825517703.png" alt="ფოტო 1">
+    <img src="when-coding-is-criminal.webp" alt="ფოტო 2">
+  </div>
+
+  <!-- 3) სტილიზებული ტექსტი -->
+  <div class="styled-div">
+    <p>ეს არის სტილიზებული ტექსტი</p>
+  </div>
+
+</body>
+</html>
