@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ბმულები და სტილები</title>
+
+  <!-- Google Fonts Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    /* 1) პირველი ბმული — Roboto */
+    .example-link {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 5px;
+      display: inline-block;
+    }
+    .example-link:link {
+      color: black;
+      background-color: white;
+    }
+    .example-link:visited {
+      color: #5a3b1c; /* მოყავისფრო */
+      background-color: #d3d3d3; /* ღია ნაცრისფერი */
+    }
+    .example-link:hover {
+      color: white;
+      background-color: orange;
+    }
+    .example-link:active {
+      color: white;
+      background-color: red;
+    }
+
+    /* 2) სამ ბმულს Lobster შრიფტით */
+    .nav-link {
+      font-family: 'Lobster', cursive;
+      color: darkblue;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .nav-link:hover {
+      color: #800020; /* ბორდოსფერი */
+    }
+    .nav1 {
+      font-weight: normal;
+    }
+    .nav2 {
+      font-weight: bold;
+    }
+    .nav3 {
+      font-weight: normal;
+    }
+
+    /* 3) div ბლოკი — Open Sans */
+    .info-box {
+      width: 250px;
+      height: 150px;
+      background-color: white;
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+    .info-box:hover {
+      background-color: #f0f8ff;
+    }
+    .info-box h2 {
+      font-weight: bold;
+      margin-top: 0;
+    }
+
+    /* 4) ორი ბმული — sans-serif */
+    .external-link {
+      font-family: sans-serif;
+      text-decoration: none;
+      display: block;
+      margin-top: 5px;
+    }
+    .external-link:link {
+      color: blue;
+    }
+    .external-link:visited {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) Example ბმული -->
+  <a href="https://example.com" class="example-link">ეწვიე Example-ს</a>
+
+  <hr>
+
+  <!-- 2) სამ ბმული Lobster შრიფტით -->
+  <a href="#" class="nav-link nav1">მთავარი</a>
+  <a href="#" class="nav-link nav2">ჩვენს შესახებ</a>
+  <a href="#" class="nav-link nav3">კონტაქტი</a>
+
+  <hr>
+
+  <!-- 3) div ბლოკი Open Sans-ით -->
+  <div class="info-box">
+    <h2>სათაური</h2>
+    <p>ეს არის ტექსტი, რომელიც განთავსებულია დივის შიგნით.</p>
+  </div>
+
+  <hr>
+
+  <!-- 4) ორი გარე ბმული -->
+  <a href="https://example.com" class="external-link">Example.com</a>
+  <a href="https://google.com" class="external-link">Google.com</a>
+
+</body>
+</html>
