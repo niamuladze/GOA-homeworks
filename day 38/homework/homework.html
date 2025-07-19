@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>პირადი ბლოგი</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background: #4caf50;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: square; /* მარკერი - კვადრატი */
+      list-style-position: inside;
+      padding-left: 0;
+      margin: 20px 0;
+    }
+    nav ul li::marker {
+      color: #4caf50;
+      font-size: 18px;
+    }
+    nav ul li {
+      margin: 8px 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #4caf50;
+      text-decoration: underline;
+    }
+    input[type="text"] {
+      padding: 8px;
+      border: none;
+      border-radius: 8px;
+      width: 250px;
+      font-size: 16px;
+    }
+    input[type="text"]::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>მოგესალმებით ჩემს პირად ბლოგში!</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">მთავარი</a></li>
+    <li><a href="#">პოსტები</a></li>
+    <li><a href="#">გალერეა</a></li>
+    <li><a href="#">კონტაქტი</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>ძიება ბლოგში</h2>
+  <form>
+    <input type="text" placeholder="ჩაწერეთ საძიებო სიტყვა..." />
+    <button type="submit">ძებნა</button>
+  </form>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Tables and Lists Example</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #999;
+    }
+
+    /* 1) მსგავსი დიზაინის table */
+    .colorful-table th {
+      background-color: #a8d3e5;
+      color: black;
+    }
+
+    .colorful-table td:nth-child(1) { background-color: #a1ff00; }
+    .colorful-table td:nth-child(2) { background-color: #66b2ff; }
+    .colorful-table td:nth-child(3) { background-color: #d4a017; }
+    .colorful-table td:nth-child(4) { background-color: #c1440e; color: white; }
+    .colorful-table td:nth-child(5) { background-color: #b30000; color: white; }
+
+    /* 2) კენტი row-ები შავი */
+    .odd-black tr:nth-child(odd) {
+      background-color: black;
+      color: white;
+    }
+
+    /* 3) პირველი 5 row კარტოშკასფერი (wheat) */
+    .wheat-bg tr {
+      background-color: wheat;
+    }
+
+    /* 4) ul სტილი */
+    .styled-ul {
+      list-style-type: square;
+      list-style-position: inside;
+      color: tomato;
+      font-size: 18px;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    /* 5) ol სტილი და ახსნა */
+    .styled-ol {
+      list-style-type: lower-greek;
+      list-style-position: outside;
+      text-align: center;
+      width: 400px;
+      margin: 20px auto;
+    }
+
+    .fix-symbols {
+      list-style-position: inside; /* ეს გამოასწორებს ტექსტის გართულებას */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 1) მსგავსი დიზაინის ცხრილი -->
+  <h2>1) ფერადი ცხრილი</h2>
+  <table class="colorful-table">
+    <tr>
+      <th>S.R</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Number</th>
+      <th>Country</th>
+    </tr>
+    <tr><td>1</td><td>John</td><td>California</td><td>745845</td><td>USA</td></tr>
+    <tr><td>2</td><td>Dain</td><td>Berlin</td><td>514254</td><td>Germany</td></tr>
+    <tr><td>3</td><td>Que</td><td>New Delhi</td><td>854874</td><td>India</td></tr>
+    <tr><td>4</td><td>Tesla</td><td>Karanchi</td><td>658243</td><td>Pakistan</td></tr>
+    <tr><td>5</td><td>Neil</td><td>Dhaka</td><td>658489</td><td>Bangladesh</td></tr>
+  </table>
+
+  <!-- 2) 4x3 ცხრილი – კენტი row-ები შავი -->
+  <h2>2) კენტი row-ები შავი</h2>
+  <table class="odd-black">
+    <tr><td>1</td><td>Apple</td><td>Red</td></tr>
+    <tr><td>2</td><td>Banana</td><td>Yellow</td></tr>
+    <tr><td>3</td><td>Grapes</td><td>Purple</td></tr>
+    <tr><td>4</td><td>Orange</td><td>Orange</td></tr>
+  </table>
+
+  <!-- 3) 4x4 ცხრილი – ყველა row კარტოშკასფერი -->
+  <h2>3) კარტოშკასფერი row-ები</h2>
+  <table class="wheat-bg">
+    <tr><td>1</td><td>A</td><td>B</td><td>C</td></tr>
+    <tr><td>2</td><td>D</td><td>E</td><td>F</td></tr>
+    <tr><td>3</td><td>G</td><td>H</td><td>I</td></tr>
+    <tr><td>4</td><td>J</td><td>K</td><td>L</td></tr>
+  </table>
+
+  <!-- 4) ul – კვადრატული, inside, პომიდვრისფერი -->
+  <h2>4) styled UL</h2>
+  <ul class="styled-ul">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>SQL</li>
+  </ul>
+
+  <!-- 5) ol – ბერძნული, outside, ცენტრში -->
+  <h2>5) styled OL – outside (პრობლემით)</h2>
+  <ol class="styled-ol">
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+    <li>Item Four</li>
+    <li>Item Five</li>
+  </ol>
+
+  <!-- ახსნა -->
+  <p style="width: 60%; margin: auto; text-align: center;">
+    ❗ როდესაც ვიყენებთ <b>list-style-position: outside</b>, ნუმერაციის სიმბოლო (მაგ. α, β, γ...) რჩება მარცხნივ,
+    ხოლო ტექსტი – ცენტრში. <br>
+    ✅ გამოსასწორებლად უნდა გამოვიყენოთ <code>list-style-position: inside;</code> ან Flex სტილიზაცია.
+  </p>
+
+  <!-- გასწორებული OL -->
+  <h2>✔️ გამოსწორებული OL</h2>
+  <ol class="styled-ol fix-symbols">
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+    <li>Item Four</li>
+    <li>Item Five</li>
+  </ol>
+
+</body>
+</html>

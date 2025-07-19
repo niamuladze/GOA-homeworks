@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<title>List Style Design ერთად</title>
+<style>
+  /* უცნობი ჩამონათვალი */
+  ul.custom-list {
+    list-style-type: circle;      /* მარკერი - წრე */
+    list-style-position: inside;  /* მარკერი ტექსტის ხაზში */
+    color: #007acc;
+    font-weight: bold;
+    padding-left: 0;
+  }
+  ul.custom-list li {
+    margin: 6px 0;
+  }
+
+  /* ნომრირებული ჩამონათვალი */
+  ol.custom-list {
+    list-style-type: decimal-leading-zero; /* 01, 02, 03... */
+    list-style-position: outside;           /* მარკერი ტექსტის გარეთ */
+    padding-left: 30px;
+    color: #cc5500;
+  }
+  ol.custom-list li {
+    margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+
+<h2>უცნობი ჩამონათვალი (ul)</h2>
+<ul class="custom-list">
+  <li>თბილისი</li>
+  <li>ბათუმი</li>
+  <li>ქუთაისი</li>
+</ul>
+
+<h2>ნომრირებული ჩამონათვალი (ol)</h2>
+<ol class="custom-list">
+  <li>პირველი დღე</li>
+  <li>მეორე დღე</li>
+  <li>მესამე დღე</li>
+</ol>
+
+<hr>
+
+<h3>ნასწავლი list-style თვისებები:</h3>
+<ul>
+  <li><b>list-style-type</b> — მარკერის ტიპი (disc, circle, decimal, lower-roman, ...)</li>
+  <li><b>list-style-position</b> — მარკერის პოზიცია (inside, outside)</li>
+  <li><b>list-style-image</b> — მარკერის ნაცვლად სურათი (url())</li>
+  <li><b>list-style</b> — შორტჰენდი ყველა თვისებისთვის ერთად</li>
+</ul>
+
+</body>
+</html>
